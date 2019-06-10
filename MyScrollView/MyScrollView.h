@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyScrollView : UIView
+@interface MyScrollView : UIView 
+
+@property (nonatomic) CGSize contentSize;
+
+-(void)scrollView: (UIPanGestureRecognizer *)panGesture;
 
 @end
 
