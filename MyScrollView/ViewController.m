@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
 
     UIView *mainView = [[UIView alloc] initWithFrame: self.view.bounds];
-    [mainView setBackgroundColor:[UIColor cyanColor]];
+    [mainView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:mainView];
     
     UIView *redView = [[UIView alloc] initWithFrame: CGRectMake(20, 20, 100, 100)];
@@ -38,6 +38,12 @@
     [yellowView setBackgroundColor:[UIColor yellowColor]];
     [mainView addSubview:yellowView];
 
+    
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    
+    self.view.bounds = CGRectOffset(self.view.bounds, 0, 100);
     
 }
 
